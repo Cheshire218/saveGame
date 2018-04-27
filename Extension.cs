@@ -8,5 +8,11 @@ namespace Assets._scripts.GU_04_04_2018
         {
             return String.Format(format, arg);
         }
+
+        public static bool IsTryBool(this string self)
+        {
+            bool result;
+            return Boolean.TryParse(self, out result) && result;
+        }
     }
 }
